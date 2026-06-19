@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Susmitha Rajlin | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<link rel="stylesheet"
+href="https://unpkg.com/aos@next/dist/aos.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">Susmitha Rajlin</div>
+
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<div class="menu-btn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+<div class="hero-content" data-aos="fade-right">
+
+<img
+src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+class="profile-img"
+alt="avatar">
+
+<h1>Hi, I'm Susmitha Rajlin</h1>
+
+<h3>Pre-Final Year Student | Aspiring IoT Engineer</h3>
+
+<p>
+Passionate about Web Development,
+JavaScript, APIs, and building modern web applications.
+</p>
+
+<div class="hero-buttons">
+
+<a href="resume.pdf" download class="btn">
+Download Resume
+</a>
+
+<a href="#contact" class="btn secondary">
+Contact Me
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" data-aos="fade-up">
+
+<h2>About Me</h2>
+
+<p>
+I am a passionate student interested in
+Web Development, JavaScript,
+IoT Technologies, and AI Integration.
+
+I enjoy building responsive websites,
+interactive user interfaces,
+and real-world projects.
+</p>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" data-aos="fade-up">
+
+<h2>Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Python</div>
+<div class="skill">C Programming</div>
+<div class="skill">GitHub</div>
+<div class="skill">EmailJS</div>
+<div class="skill">Groq API</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 data-aos="fade-up">Projects</h2>
+
+<div class="project-container">
+
+<div class="project-card"
+onclick="openModal(1)"
+data-aos="zoom-in">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+
+<h3>Portfolio Website</h3>
+
+<p>Responsive personal portfolio.</p>
+
+</div>
+
+<div class="project-card"
+onclick="openModal(2)"
+data-aos="zoom-in">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+
+<h3>AI Chatbot</h3>
+
+<p>Groq-powered chatbot integration.</p>
+
+</div>
+
+<div class="project-card"
+onclick="openModal(3)"
+data-aos="zoom-in">
+
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+
+<h3>Quiz Application</h3>
+
+<p>Interactive quiz system.</p>
+
+</div>
+
+<div class="project-card"
+onclick="openModal(4)"
+data-aos="zoom-in">
+
+<img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4">
+
+<h3>JavaScript Projects</h3>
+
+<p>Collection of JS mini-projects.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECT MODAL -->
+
+<div id="projectModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close"
+onclick="closeModal()">&times;</span>
+
+<img id="modalImage">
+
+<h2 id="modalTitle"></h2>
+
+<p id="modalDescription"></p>
+
+<p id="modalTech"></p>
+
+<a id="modalLink"
+target="_blank">
+View Project
+</a>
+
+</div>
+
+</div>
+
+<!-- TESTIMONIALS -->
+
+<section id="testimonials">
+
+<h2>Testimonials</h2>
+
+<div class="testimonial-slider">
+
+<div class="testimonial active">
+
+<img src="https://randomuser.me/api/portraits/women/1.jpg">
+
+<h3>Project Reviewer</h3>
+
+<p>
+"Excellent project execution and UI design."
+</p>
+
+</div>
+
+<div class="testimonial">
+
+<img src="https://randomuser.me/api/portraits/men/2.jpg">
+
+<h3>Mentor</h3>
+
+<p>
+"Strong understanding of JavaScript concepts."
+</p>
+
+</div>
+
+<div class="testimonial">
+
+<img src="https://randomuser.me/api/portraits/women/3.jpg">
+
+<h3>Internship Guide</h3>
+
+<p>
+"Highly motivated and quick learner."
+</p>
+
+</div>
+
+<div class="testimonial">
+
+<img src="https://randomuser.me/api/portraits/men/4.jpg">
+
+<h3>Team Member</h3>
+
+<p>
+"Great collaboration and communication."
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="https://picsum.photos/400?1" class="gallery-img">
+<img src="https://picsum.photos/400?2" class="gallery-img">
+<img src="https://picsum.photos/400?3" class="gallery-img">
+<img src="https://picsum.photos/400?4" class="gallery-img">
+<img src="https://picsum.photos/400?5" class="gallery-img">
+<img src="https://picsum.photos/400?6" class="gallery-img">
+
+</div>
+
+</section>
+
+<!-- LIGHTBOX -->
+
+<div id="lightbox">
+
+<span id="closeLightbox">&times;</span>
+
+<img id="lightboxImg">
+
+</div>
+
+<!-- CHATBOT -->
+
+<section id="chatbot">
+
+<h2>AI Chatbot</h2>
+
+<div class="chat-container">
+
+<div id="chatBox"></div>
+
+<div id="typingIndicator">
+AI is typing...
+</div>
+
+<div class="chat-input">
+
+<input
+type="text"
+id="userInput"
+placeholder="Ask anything...">
+
+<button id="sendBtn">
+Send
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Your Email"
+required>
+
+<textarea
+id="message"
+rows="5"
+placeholder="Your Message"
+required></textarea>
+
+<button type="submit" class="btn">
+Send Message
+</button>
+
+<p id="formStatus"></p>
+
+</form>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="social-icons">
+
+<a href="https://github.com/susmitha-rajlin">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-linkedin"></i>
+</a>
+
+</div>
+
+<p>
+© <span id="year"></span>
+Susmitha Rajlin
+</p>
+
+<p>
+Made with ❤️ using HTML, CSS & JavaScript
+</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
